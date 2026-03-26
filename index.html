@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background: #f4f4f4;
         }
 
@@ -23,14 +23,14 @@
         }
 
         .hero {
-            background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+            background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
             color: white;
             padding: 80px 20px;
             text-align: center;
         }
 
         .section {
-            padding: 30px 20px;
+            padding: 30px;
             text-align: center;
         }
 
@@ -44,9 +44,9 @@
         .card {
             background: white;
             padding: 20px;
-            width: 250px;
+            width: 220px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px #ccc;
             transition: 0.3s;
         }
 
@@ -54,15 +54,16 @@
             transform: scale(1.05);
         }
 
+        /* GALLERY */
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
+            padding: 10px;
         }
 
         .gallery img {
-            width: 300px;
+            width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
@@ -75,7 +76,7 @@
         }
 
         footer {
-            background: #111;
+            background: black;
             color: white;
             text-align: center;
             padding: 10px;
@@ -113,20 +114,22 @@
 <div class="section fade-in">
     <h2>Our Services</h2>
     <div class="services">
-        <div class="card fade-in">🏗️ Building Construction</div>
-        <div class="card fade-in">🏠 House Construction</div>
-        <div class="card fade-in">🔨 Renovation Works</div>
-        <div class="card fade-in">📐 Contract Projects</div>
+        <div class="card">🏗️ Building Construction</div>
+        <div class="card">🏠 House Construction</div>
+        <div class="card">🔨 Renovation Works</div>
+        <div class="card">📐 Contract Projects</div>
     </div>
 </div>
 
-<!-- GALLERY SECTION -->
+<!-- 🔥 CONSTRUCTION IMAGE GALLERY -->
 <div class="section fade-in">
     <h2>Our Projects</h2>
+
     <div class="gallery">
         <img src="https://images.unsplash.com/photo-1599423300746-b62533397364">
         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
         <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
     </div>
 </div>
 
